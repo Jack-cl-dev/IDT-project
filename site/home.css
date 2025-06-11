@@ -1,0 +1,22 @@
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.img-container img {
+    max-width: 45%;
+    max-height: 45%;
+}
+
+body{
+    background-color: #000;
+}
+
+#intro-text {
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+    margin: 20px;
+}
