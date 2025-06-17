@@ -6,6 +6,8 @@
 .img-container img {
     max-width: 45%;
     max-height: 45%;
+    position: relative;
+    text-align: center;
 }
 
 body{
@@ -26,5 +28,12 @@ body{
     color: white;
     font-size: 32px;
     font-family: "Inter Semi Bold", sans-serif;
-    
+}
+#cover-image-header {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    font-family: "Inter Semi Bold", sans-serif;
+    font-size: 20px;
+    color:  white;
 }
