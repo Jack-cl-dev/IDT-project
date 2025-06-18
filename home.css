@@ -4,10 +4,11 @@
 }
 
 .img-container img {
-    max-width: 45%;
-    max-height: 45%;
+    width: 100%;
+    /*
     position: relative;
     text-align: center;
+    */
 }
 
 body{
