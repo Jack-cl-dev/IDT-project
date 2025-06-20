@@ -1,15 +1,17 @@
 :root {
-    --bg-color: #030303;
-    --text-color: #ffffff;
+    /*TODO: Overhaul the colour scheme to fit the brand */
     --primary-colour: #0600c2;
     --secondary-colour: #020024;
     --accent-color: #12cda1;
     --button-color-1: #0600c2;
     --button-color-2: #12cda1;
+    --font-primary: inter; /*TODO: Investigate alternative fonts */
 }
-/*
-    Add a black background color to the top navigation
-*/
+
+body{
+    background-color: #000;
+}
+
 .topnav {
     background-color: #262626;
     overflow: hidden;
@@ -18,10 +20,6 @@
     margin: 20px;
 }
 
-/*
-    Style the links inside the navigation bar
-    gives each link a button
-*/
 .topnav a {
     float: left;
     color: white;
@@ -29,30 +27,30 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    font-family: Inter, sans-serif;
+    font-family: var(--font-primary), sans-serif;
     border-radius: 25px;
     margin: 5px;
     background-color: #212121;
 }
 
-/*
-    Changes the color of links on hover
-*/
 .topnav a:hover {
     background-color: var(--accent-color);
     color: black;
 }
 
-/* Add a color to the active/current link */
 .topnav a.active {
+/*
+Add a color to the active/current link
+*/
     background-color: var(--primary-colour);
     color: white;
 }
-/*
-    this is temp code for what will (if I bother) display a pfp and user
-    in the future. (placholder username and pfp, unless i make a backend)
-*/
+
 .topnav a.login {
+/*
+this is temp code for what will (if I bother) display a pfp and user
+in the future. (placeholder username and pfp)
+*/
     float: right;
     background-color: #212121;
     border-radius: 25px;
@@ -62,5 +60,4 @@
     font-size: 17px;
     font-family: Inter, sans-serif;
     color: white;
-
 }
