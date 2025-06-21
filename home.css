@@ -1,0 +1,61 @@
+.img-container {
+    position: relative;
+    width: 100%;
+}
+
+.img-container img {
+    width: 98%; /* The website is wider than the browser can display without scrolling horizontally otherwise,
+                   I assume this is the paddings fault*/
+
+    max-height: 1160px; /* This might not be mobile friendly and is just a bad solution. TODO: Change this, it sucks */
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 25px;
+    border-radius: 50px;
+}
+
+#cover-image-header,
+#cover-image-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+    width: max-content;
+    padding: 0.5em;
+    background: rgba(0, 0, 0, 0.7);
+    font-family: var(--font-primary), sans-serif;
+}
+
+#cover-image-header {
+    top: 20%;
+    font-size: 3em;
+}
+
+#cover-image-text {
+    /*
+    TODO: BUG; On small screens this appears as inside the header text
+     */
+    top: 30%;
+    font-size: 1.2em;
+}
+
+#intro-text,
+#fold-text {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    font-family: var(--font-primary), sans-serif;
+    color: white;
+}
+
+#intro-text {
+    font-size: 16px;
+
+}
+
+#fold-text {
+    font-size: 32px;
+}
+
