@@ -5,7 +5,7 @@
     --accent-color: #12cda1;
     --button-color-1: #0600c2;
     --button-color-2: #12cda1;
-    --font-primary: 'SquaresBold'; /*TODO: Investigate alternative fonts, try SquaresBold */
+    --font-primary: 'Inter'; /*TODO: Investigate alternative fonts, try SquaresBold */
 }
 
 body{
