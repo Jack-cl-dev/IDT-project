@@ -1,11 +1,9 @@
 :root {
     /*TODO: Overhaul the colour scheme to fit the brand */
-    --primary-colour: #0600c2;
+    --primary-colour: #41639C;
     --secondary-colour: #020024;
-    --accent-color: #12cda1;
-    --button-color-1: #0600c2;
-    --button-color-2: #12cda1;
-    --font-primary: 'Inter'; /*TODO: Investigate alternative fonts, try SquaresBold */
+    --accent-color: #FFE900;
+    --font-primary: 'sweet-square-pro'; /*TODO: Investigate alternative fonts, try SquaresBold */
 }
 
 body{
@@ -58,7 +56,7 @@ in the future. (placeholder username and pfp)
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    font-family: 'inter', sans-serif;
+    font-family: var(--font-primary), sans-serif;
     color: white;
 }
 footer {
