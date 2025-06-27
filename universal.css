@@ -1,9 +1,8 @@
 :root {
-    /*TODO: Overhaul the colour scheme to fit the brand */
     --primary-colour: #41639C;
     --secondary-colour: #020024;
     --accent-color: #FFE900;
-    --font-primary: 'sweet-square-pro'; /*TODO: Investigate alternative fonts, try SquaresBold */
+    --font-primary: 'sweet-square-pro';
 }
 
 body{
@@ -69,7 +68,7 @@ footer {
     padding: 15px 100px;
     background-color: #100f0f;
     color: #ffffff;
-    font-family: 'inter', sans-serif;
+    font-family: var(--font-primary), sans-serif;
     font-size: 18px;
 
     p {

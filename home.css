@@ -1,13 +1,18 @@
+/*
+This is SO FUCKED
+the image header needs to be rebuilt to only take up the intended amount of space, but all attempts to do
+have resulted in total failure.
+TODO: Fix this shitty code
+ */
 .img-container {
     position: relative;
     width: 100%;
 }
 
 .img-container img {
-    width: 98%; /* The website is wider than the browser can display without scrolling horizontally otherwise,
+    width: 98%; /* The website is wider than the browser can display without scrolling horizontally unless set to 98%,
                    I assume this is the paddings fault*/
-
-    max-height: 1160px; /* This might not be mobile friendly and is just a bad solution. TODO: Change this, it sucks */
+    max-height: 1160px;
     display: block;
     padding-left: 20px;
     padding-right: 20px;
@@ -58,4 +63,12 @@
 #fold-text {
     font-size: 32px;
 }
-
+/*
+#secondary-text-block {
+}
+#secondary-text-block img {
+    display: flex;
+    justify-content: right;
+    width: 100px;
+}
+ */
