@@ -7,6 +7,7 @@ TODO: Fix this shitty code
 .img-container {
     position: relative;
     width: 100%;
+    padding-bottom: 50px;
 }
 
 .img-container img {
@@ -19,6 +20,14 @@ TODO: Fix this shitty code
     padding-top: 25px;
     border-radius: 50px;
 }
+#company-logo {
+    position: absolute;
+    bottom: 30px; /* adjust as needed */
+    right: 30px;  /* adjust as needed */
+    width: 150px; /* or any appropriate size */
+    height: auto;
+}
+
 
 #cover-image-header,
 #cover-image-text {
@@ -34,7 +43,7 @@ TODO: Fix this shitty code
 }
 
 #cover-image-header {
-    top: 20%;
+    top: 35%;
     font-size: 3em;
 }
 
@@ -42,7 +51,7 @@ TODO: Fix this shitty code
     /*
     TODO: BUG; On small screens this appears as inside the header text
      */
-    top: 30%;
+    top: 45%;
     font-size: 1.2em;
 }
 
@@ -64,22 +73,26 @@ TODO: Fix this shitty code
     font-size: 32px;
 }
 
-#secondary-text-block {
+#secondary-container img{
+    width: 2000px;
+    border-radius: 50px;
+    padding: 20px;
+}
+/*
+a bit tired when this was written, it probably has redundant margins and padding and stuff
+ */
+#secondary-container {
+    color: white;
+    font-family: var(--font-primary), sans-serif;
     display: flex;
     justify-content: left;
-    padding-top: 50px;
-    padding-bottom: 50px;
     background: #212020;
-    p {
-        color: white;
-        font-family:  var(--font-primary), sans-serif;
+    border-radius: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    p, h2 {
         padding-left: 50px;
     }
-}
-#secondary-text-block img{
-    width: 750px;
-    border-radius: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 25px;
+
 }
