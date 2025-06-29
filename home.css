@@ -22,9 +22,9 @@ TODO: Fix this shitty code
 }
 #company-logo {
     position: absolute;
-    bottom: 30px; /* adjust as needed */
-    right: 30px;  /* adjust as needed */
-    width: 150px; /* or any appropriate size */
+    bottom: 30px;
+    right: 30px;
+    width: 150px;
     height: auto;
 }
 
