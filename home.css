@@ -6,8 +6,19 @@ TODO: Fix this shitty code
  */
 .img-container {
     position: relative;
+}
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding-bottom: 50px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
 }
 
 .img-container img {
@@ -31,46 +42,20 @@ TODO: Fix this shitty code
 
 #cover-image-header,
 #cover-image-text {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     color: white;
-    text-align: center;
     width: max-content;
+    max-width: 90%;
     padding: 0.5em;
     background: rgba(0, 0, 0, 0.7);
     font-family: var(--font-primary), sans-serif;
 }
 
 #cover-image-header {
-    top: 35%;
     font-size: 3em;
 }
 
 #cover-image-text {
-    /*
-    TODO: BUG; On small screens this appears as inside the header text
-     */
-    top: 45%;
     font-size: 1.2em;
-}
-
-#intro-text,
-#fold-text {
-    display: block;
-    text-align: center;
-    margin: 20px;
-    font-family: var(--font-primary), sans-serif;
-    color: white;
-}
-
-#intro-text {
-    font-size: 16px;
-
-}
-
-#fold-text {
-    font-size: 32px;
 }
 
 #secondary-container img{
