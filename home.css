@@ -78,3 +78,9 @@
     text-align: left;
     flex-direction: row-reverse;
 }
+#end-text{
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+    font-family: var(--font-primary), sans-serif;
+}
