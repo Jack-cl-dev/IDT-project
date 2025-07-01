@@ -24,21 +24,13 @@ TODO: Fix this shitty code
 .img-container img {
     width: 98%; /* The website is wider than the browser can display without scrolling horizontally unless set to 98%,
                    I assume this is the paddings fault*/
-    max-height: 1160px;
+    max-height: 85vh;
     display: block;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 25px;
     border-radius: 50px;
 }
-#company-logo {
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-    width: 150px;
-    height: auto;
-}
-
 
 #cover-image-header,
 #cover-image-text {
@@ -63,9 +55,7 @@ TODO: Fix this shitty code
     border-radius: 50px;
     padding: 20px;
 }
-/*
-a bit tired when this was written, it probably has redundant margins and padding and stuff
- */
+
 #secondary-container {
     color: white;
     font-family: var(--font-primary), sans-serif;
@@ -73,11 +63,10 @@ a bit tired when this was written, it probably has redundant margins and padding
     justify-content: left;
     background: #212020;
     border-radius: 50px;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-bottom: 50px;
+    margin: 50px 20px;
+
     p, h2 {
         padding-left: 50px;
+        padding-right: 50px;
     }
-
 }
