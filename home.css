@@ -43,8 +43,6 @@
 #cover-image-text {
     font-size: 1.2em;
 }
-
-/* TODO: for some reason the tertiary image is larger than the secondary one? */
 #secondary-container img {
     width: 400px;
     max-height: 400px;

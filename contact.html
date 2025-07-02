@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="universal.css">
+    <link rel="icon" href="content/Super_Earth.svg">
+    <link rel="stylesheet" href="https://use.typekit.net/krf2thc.css">
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="">About</a>
+        <a class = "login" href="">Login</a>
+    </div>
+
+    <h1>How would you like to contact us?</h1>
+    <div class="content-wrapper">
+        <div class="form-container">
+            <form>
+                <h2>Request a call.</h2>
+                <p>Give us some information and we will reach out to you.</p>
+                <hr>
+                <label for="fullName">Full Name</label><br>
+                <label for="FullName"></label><input class="input-one" type="text" id="FullName" name="firstName" required><br><br>
+
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="products">Products</label><br>
+                <input type="radio" id="products" name="subject" value="Products" required><br><br>
+
+                <label for="feedback">Feedback</label><br>
+                <input type="radio" id="feedback" name="subject" value="Feedback" required><br><br>
+
+                <label for="other">Other</label><br>
+                <input type="radio" id="other" name="subject" value="Other" required><br><br>
+
+                <label for="message">Message</label><br>
+                <textarea id="message" name="message" required></textarea><br><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+
+        <div class="info-containers-wrapper">
+            <div id="info-container-1">
+                <h2>Call us.</h2>
+                <p>000-000-000</p>
+            </div>
+            <div id="info-container-2">
+                <h2>Book an excursion.</h2>
+                <p>Come get an in person view of our operations and learn the in's and outs of our operations.</p>
+            </div>
+            <div id="info-container-3">
+                <h2>Leave us some feedback.</h2>
+                <p>good or bad, we would love to know your thoughts.</p>
+                <p id="button">Send feedback</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+    </div>
+</body>
+</html>

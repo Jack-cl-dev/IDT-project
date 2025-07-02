@@ -1,0 +1,106 @@
+h1 {
+    color:white;
+    font-family: var(--font-primary), sans-serif;
+    margin-left: 21%;
+}
+.content-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin-left: 10%;
+    padding: 20px;
+}
+
+.form-container {
+    flex: 2;
+    display: inline-block;
+    max-width: 600px;
+    margin: 0 0 0 15%;
+    padding: 20px;
+    background-color: #202023;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: var(--font-primary), sans-serif;
+    color: white;
+    min-width: 40%;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: #504e4e;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+    margin-bottom: 12px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#info-container-1{
+    flex: 1;
+    background-color: #202023;
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    font-family: var(--font-primary), sans-serif;
+    margin-bottom: 20px;
+
+    p {
+        font-weight: bold;
+        font-size: 30px;
+    }
+}
+#info-container-2, #info-container-3{
+    flex: 1;
+    background-color: #202023;
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    font-family: var(--font-primary), sans-serif;
+    margin-bottom: 20px;
+}
+#info-container-3{
+
+}
