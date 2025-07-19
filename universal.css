@@ -2,7 +2,7 @@
     --primary-colour: #41639C;
     --secondary-colour: #020024;
     --accent-color: #FFE900;
-    --font-primary: 'sweet-square-pro';
+    --font-primary: 'sweet-square-pro'; /* Not sure if this typeface is suitable for body text, might change those elements to another font */
 }
 
 body {
