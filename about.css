@@ -1,8 +1,6 @@
+#Initial-Content,
 .content-wrapper {
-    margin: 0 auto;
     padding: 20px;
-    position: relative;
     color: white;
     font-family: var(--font-primary), sans-serif;
-    text-decoration: none;
 }
