@@ -72,6 +72,13 @@
         padding-right: 50px;
     }
 }
+#secondary-text,
+#tertiary-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 #tertiary-container{
     text-align: left;
