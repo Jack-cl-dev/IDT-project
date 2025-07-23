@@ -131,17 +131,21 @@
     }
 }
 #map-container {
-    width: 50%;
-    max-width: 1200px;
+    width: 90%;
+    max-width: 950px;
     display: flex;
-    padding: 1px 20px;
+    padding: 20px;
     border-radius: 12px;
     color: white;
     font-family: var(--font-primary), sans-serif;
     background-color: #202023;
     justify-content: center;
-    min-height: 400px; /* this is temp code */
     margin: 0 auto 50px;
 
-<iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src=></iframe>
+}
+
+#map-container iframe {
+    width: 100%;
+    min-height: 450px;
+    border-radius: 8px;
 }
