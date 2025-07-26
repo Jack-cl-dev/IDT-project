@@ -1,1 +1,1 @@
-# IDT-project
+# Super Earth Mining Co.
