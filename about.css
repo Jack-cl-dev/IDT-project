@@ -1,74 +1,82 @@
-root {
-    --bg-colour: #312f2f;
+:root {
+    --bg-colour: #FFFFFF19;
+    --text-color: #ffffff;
 }
 
 #Initial-Content,
 .content-wrapper {
     padding: 20px;
-    color: white;
+    color: var(--text-color);
     font-family: var(--font-primary), sans-serif;
 }
 
+
 #table-container {
-    color: white;
-    margin-left: 20px;
-    table, th, td {
-        border: 1px solid white;
-        border-radius: 10px;
-        border-spacing: 10px;
-        padding: 5px;
-    }
+    padding: 60px 10%;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    animation: slideFadeIn 1s ease-out forwards;
 }
+
+table {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    background-color: var(--bg-colour);
+    border-radius: 12px;
+    overflow: hidden;
+    font-family: var(--font-primary), sans-serif;
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #FFFFFF19
+}
+
+th {
+    font-weight: bold;
+    color: var(--accent-color);
+    font-size: 18px;
+}
+
+td {
+    font-size: 16px;
+}
+
+
+
 .about-hero {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 80px 10%;
-    background-color: var(--bg-colour);
-    gap: 60px;
-    flex-wrap: wrap;
-
+    padding: 100px 10%;
+    text-align: center;
 }
 
 .about-text {
-    flex: 1 1 400px;
+    max-width: 800px;
     animation: slideFadeIn 1s ease-out forwards;
     opacity: 0;
-    color: white;
+    color: var(--text-color);
 }
 
 .about-text h1 {
-    font-size: 42px;
-    margin-bottom: 20px;
+    font-size: 48px;
+    margin-bottom: 30px;
     font-family: var(--font-primary), sans-serif;
-    color: white;
+    color: var(--accent-color);
 }
 
 .about-text p {
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 20px;
+    line-height: 1.8;
     font-family: var(--font-primary), sans-serif;
-    color: white;
+    color: var(--text-color);
 }
 
-.about-image {
-    flex: 1 1 400px;
-    overflow: hidden;
-    border-radius: 16px;
-}
 
-.about-image img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.5s ease;
-    border-radius: 16px;
-}
-
-.about-image:hover img {
-    transform: scale(1.05);
-}
-
-/* Animation for text fade/slide-in */
 @keyframes slideFadeIn {
     0% {
         opacity: 0;
@@ -80,24 +88,9 @@ root {
     }
 }
 
-.Main-heading {
-    text-align: left;
-    font-size: 75px;
-    font-family: var(--font-primary), sans-serif;
-    color: white;
-}
 
-.container {
-    display: flex;
-    color: var(--bg-colour);
-    font-family: var(--font-primary), sans-serif;
-    font-size:125px;
-    padding-left: 100px;
-
-}
 .about-mission, .about-values {
-    padding: 60px 10%;
-    background-color: var(--bg-colour);
+    padding: 80px 10%;
     text-align: center;
     font-family: var(--font-primary), sans-serif;
     animation: slideFadeIn 1s ease-out forwards;
@@ -106,48 +99,51 @@ root {
 .about-mission h2,
 .about-values h2 {
     font-size: 36px;
-    color: #ffffff;
-    margin-bottom: 20px;
+    color: var(--accent-color);
+    margin-bottom: 30px;
 }
 
 .about-mission p {
     font-size: 18px;
-    line-height: 1.7;
-    color: #ffffff;
+    line-height: 1.8;
+    color: var(--text-color);
     max-width: 900px;
     margin: 0 auto;
 }
+
 
 .value-cards {
     display: flex;
     gap: 30px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .card {
-    flex: 1 1 250px;
-    background-color: #312f2f;
-    padding: 25px;
+    background-color: var(--bg-colour);
+    padding: 35px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 350px;
+
+    h3 {
+        color: var(--accent-color);
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
 }
 
 .card h3 {
-    color: var(--accent-color);
-    margin-bottom: 10px;
-    font-size: 22px;
+
 }
 
 .card p {
-    color: #ffffff;
+    color: var(--text-color);
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.6;
 }
