@@ -1,66 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About</title>
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="universal.css">
     <link rel="stylesheet" href="https://use.typekit.net/krf2thc.css">
+    <title>about</title>
 </head>
 <body>
 <div class="topnav">
-    <a href = "index.html">Home</a>
-    <a href = "contact.html">Contact</a>
-    <a class = "active" href="about.html">About</a>
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a class="active" href="about.html">About</a>
     <a class = "login" href="">Login</a>
 </div>
+<section class="about-hero">
+    <div class="about-text">
+        <h1>placeholder title</h1>
+        <p>
+            placeholder text
+        </p>
+    </div>
+    <div class="about-image">
+        <img src="" alt="">
+    </div>
+</section>
 
-<div id="Initial-Content">
-    <!--
-    The Plan for this page (at a basic level and for now) is to have images of certain operational aspects. This is paired
-    with text intended to essentially 'sell' the company's services. It's about the services the company provides more than
-    who they are or where they came from. Might rename the page at some point to service this vision in the future.
-
-    Could rename this page to 'operations' or something similar, then just have a collection of images that are annotated.
-    This would require A: a decent supply of high-quality and relevant images and B: animating the annotations if I
-    could be bothered, but that probably needs some TypeScript
-
-    Upon further reading, I can compile my TS into JS, then just link the js file to the HTML, which will work for basic
-    animations like this.
-    -->
-    <!--TODO: Include a table with some data in it -->
-<h1>About Us</h1>
-<p>
-    lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, elit in congue egestas, elit elit
-    malesuada elit, quis tincidunt nunc ligula et massa.
-</p>
-</div>
-
-<div class = "content-wrapper">
-    <h2>placeholder</h2>
-    <p>this is some filler text</p>
-</div>
-
-<div id="table-container">
+<section class="about-mission">
+    <h2>Title</h2>
+    <p>
+        text
+    </p>
+</section>
+<div id="table-container"> <!-- TODO: make this look nicer -->
     <table>
         <tr>
-            <td>Emil</td>
-            <td>Tobias</td>
-            <td>Linus</td>
+            <td>placeholder</td>
+            <td>Placeholder</td>
+            <td>Placeholder</td>
         </tr>
         <tr>
-            <td>16</td>
-            <td>14</td>
+            <td>10</td>
+            <td>10</td>
             <td>10</td>
         </tr>
     </table>
 </div>
-<footer>
-    <a class="form-link" href="">Legal</a>
-    <a class="form-link" href="">Terms</a>
-    <a class="form-link" href="">Privacy</a>
-    <a class="form-link" href="">Contact</a>
-</footer>
 
+<section class="about-values">
+    <h2>Our Core Values</h2>
+    <div class="value-cards">
+        <div class="card">
+            <h3>heading</h3>
+            <p>text</p>
+        </div>
+        <div class="card">
+            <h3>heading</h3>
+            <p>text.</p>
+        </div>
+        <div class="card">
+            <h3>heading</h3>
+            <p>text</p>
+        </div>
+    </div>
+</section>
+<footer>
+    <p>Legal</p>
+    <p>Privacy</p>
+    <p>Terms</p>
+    <a class="form-link" href="contact.html">Contact</a>
+</footer>
 </body>
 </html>

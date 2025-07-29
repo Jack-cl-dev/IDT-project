@@ -1,3 +1,7 @@
+root {
+    --bg-colour: #312f2f;
+}
+
 #Initial-Content,
 .content-wrapper {
     padding: 20px;
@@ -14,4 +18,136 @@
         border-spacing: 10px;
         padding: 5px;
     }
+}
+.about-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 10%;
+    background-color: var(--bg-colour);
+    gap: 60px;
+    flex-wrap: wrap;
+
+}
+
+.about-text {
+    flex: 1 1 400px;
+    animation: slideFadeIn 1s ease-out forwards;
+    opacity: 0;
+    color: white;
+}
+
+.about-text h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-family: var(--font-primary), sans-serif;
+    color: white;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: var(--font-primary), sans-serif;
+    color: white;
+}
+
+.about-image {
+    flex: 1 1 400px;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+    border-radius: 16px;
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Animation for text fade/slide-in */
+@keyframes slideFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.Main-heading {
+    text-align: left;
+    font-size: 75px;
+    font-family: var(--font-primary), sans-serif;
+    color: white;
+}
+
+.container {
+    display: flex;
+    color: var(--bg-colour);
+    font-family: var(--font-primary), sans-serif;
+    font-size:125px;
+    padding-left: 100px;
+
+}
+.about-mission, .about-values {
+    padding: 60px 10%;
+    background-color: var(--bg-colour);
+    text-align: center;
+    font-family: var(--font-primary), sans-serif;
+    animation: slideFadeIn 1s ease-out forwards;
+}
+
+.about-mission h2,
+.about-values h2 {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.about-mission p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #ffffff;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.value-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    flex: 1 1 250px;
+    background-color: #312f2f;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: var(--accent-color);
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.card p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.5;
 }
